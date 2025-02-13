@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #ffccdc;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #e6005c;
+    }
+    .hearts {
+      font-size: 50px;
+      animation: float 1.5s infinite alternate;
+    }
+    @keyframes float {
+      from { transform: translateY(0px); }
+      to { transform: translateY(-10px); }
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: white;
+      background: #e6005c;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #bf0048;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="hearts">❤️❤️❤️</div>
+  <h1>Will You Be My Valentine? 💖</h1>
+  <button class="btn" onclick="alert('Yay! I love you! ❤️')">Yes!</button>
+</div>
+</body>
+</html>
